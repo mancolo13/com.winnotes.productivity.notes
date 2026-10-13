@@ -8,7 +8,7 @@ class Tab3Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinNotes • Pinned'),
+        title: const Text('Win • Pinned'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),

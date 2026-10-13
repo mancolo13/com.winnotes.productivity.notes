@@ -14,7 +14,7 @@ class Tab1Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinNotes • Notes'),
+        title: const Text('Win • Notes'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
