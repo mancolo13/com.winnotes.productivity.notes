@@ -1,4 +1,4 @@
-package com.arenasport.football.matchtracker
+package com.winnotes.productivity.notes
 
 import android.os.Build
 import android.os.Bundle
