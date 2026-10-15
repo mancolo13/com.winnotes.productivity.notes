@@ -7,11 +7,11 @@ class Tab2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final folders = [
-      {'name': '💼 Проекты & Разработка', 'count': '18 заметок'},
-      {'name': '💡 Идеи и стартапы', 'count': '12 заметок'},
-      {'name': '👤 Личное и здоровье', 'count': '9 заметок'},
-      {'name': '💰 Финансовые планы', 'count': '6 заметок'},
-      {'name': '📚 Обучение и конспекты', 'count': '15 заметок'},
+      {'name': '💼 Projects & Engineering', 'count': '18 notes'},
+      {'name': '💡 Ideas & Startups', 'count': '12 notes'},
+      {'name': '👤 Personal & Wellness', 'count': '9 notes'},
+      {'name': '💰 Financial Planning', 'count': '6 notes'},
+      {'name': '📚 Learning & Study Notes', 'count': '15 notes'},
     ];
 
     return Scaffold(
@@ -23,7 +23,7 @@ class Tab2Screen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Text('Папки и блокноты', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('Folders & Notebooks', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...folders.map((f) => Container(
               margin: const EdgeInsets.only(bottom: 10),

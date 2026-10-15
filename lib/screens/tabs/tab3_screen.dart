@@ -22,7 +22,7 @@ class Tab3Screen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 border: Border.all(color: AppTheme.primaryColor.withValues(alpha: 0.3)),
               ),
-              child: const Text('📌 Закрепленные важные заметки', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+              child: const Text('📌 Pinned Priority Notes', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
             const SizedBox(height: 16),
             Container(
@@ -31,9 +31,9 @@ class Tab3Screen extends StatelessWidget {
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Ключевые цели на Q4 2026', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15)),
+                  Text('Strategic Milestones for Q4 2026', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15)),
                   SizedBox(height: 8),
-                  Text('• Выпустить обновление для 15 приложений\n• Настроить автоматизацию скриншотов\n• Проверить соответствие гайдлайнам стора', style: TextStyle(color: Colors.white70, fontSize: 13, height: 1.4)),
+                  Text('• Deploy updates across 15 apps\n• Configure screenshot automation\n• Verify store guideline compliance', style: TextStyle(color: Colors.white70, fontSize: 13, height: 1.4)),
                 ],
               ),
             ),

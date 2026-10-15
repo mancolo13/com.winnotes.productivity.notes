@@ -7,9 +7,9 @@ class Tab1Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final notes = [
-      {'title': 'План запуска мобильного продукта', 'desc': '1. Релиз билдов AAB в Google Play\n2. Подготовка скриншотов устройств', 'tag': '#работа'},
-      {'title': 'Список покупок на выходные', 'desc': 'Оливковое масло, киноа, свежие ягоды, протеин', 'tag': '#личное'},
-      {'title': 'Цитаты из книги "Думай медленно"', 'desc': 'Система 1 работает автоматически и быстро, с малым усилием...', 'tag': '#книги'},
+      {'title': 'Mobile Product Launch Blueprint', 'desc': '1. Release AAB production builds to Google Play\n2. Prepare device screenshots', 'tag': '#work'},
+      {'title': 'Weekend Grocery Checklist', 'desc': 'Olive oil, quinoa, fresh blueberries, whey protein', 'tag': '#personal'},
+      {'title': 'Highlights from "Thinking, Fast and Slow"', 'desc': 'System 1 operates automatically and quickly, with little effort...', 'tag': '#books'},
     ];
 
     return Scaffold(
@@ -32,12 +32,12 @@ class Tab1Screen extends StatelessWidget {
                 children: [
                   Icon(Icons.search, color: Colors.white54),
                   SizedBox(width: 12),
-                  Text('Поиск по заметкам и тегам...', style: TextStyle(color: Colors.white54, fontSize: 14)),
+                  Expanded(child: Text('Search notes & tags...', style: TextStyle(color: Colors.white54, fontSize: 14), overflow: TextOverflow.ellipsis)),
                 ],
               ),
             ),
             const SizedBox(height: 20),
-            const Text('Все заметки', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+            const Text('All Notes', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             ...notes.map((n) => Container(
               margin: const EdgeInsets.only(bottom: 12),

@@ -6,7 +6,7 @@ class Tab4Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tags = ['#работа', '#идеи', '#flutter', '#финансы', '#книги', '#важное', '#дизайн', '#планы'];
+    final tags = ['#work', '#ideas', '#flutter', '#finance', '#books', '#priority', '#design', '#plans'];
 
     return Scaffold(
       appBar: AppBar(
@@ -24,7 +24,7 @@ class Tab4Screen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 border: Border.all(color: AppTheme.primaryColor.withValues(alpha: 0.3)),
               ),
-              child: const Text('Облако тегов и статистика', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+              child: const Text('Tag Cloud & Analytics', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
             const SizedBox(height: 16),
             Wrap(
